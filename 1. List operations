@@ -1,0 +1,41 @@
+mylist=[]
+def add(x):
+	mylist.append(x)
+	print("List after adding:",mylist)
+
+def remove(x):
+	if x in mylist:
+		mylist.remove(x)
+		print("List after removing:",mylist)
+	else:
+		print("Element not found")
+
+def display():
+	if len(mylist)== 0:
+		print("List is empty")
+	else:
+		print(mylist)
+
+while True:
+	print("1. Add")
+	print("2. Remove")
+	print("3. Display")
+	print("4. Quit")
+	x= int(input("Enter choice: "))
+	if x==1:
+		n= int(input("Integer: "))
+		add(n)
+	elif x==2:
+		if len(mylist)== 0:
+			print("List is empty")
+		else:
+			n= int(input("Integer: "))
+			remove(n)
+	elif x==3:
+		display()
+	elif x==4:
+		break
+	else:
+		print("Invalid choice")
+
+
