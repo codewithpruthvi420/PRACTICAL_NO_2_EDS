@@ -1,0 +1,7 @@
+player= list(map(int, input().split()))
+maxima= 0
+num= len(player)
+for i in range(0,num):
+	if player[i] > maxima:
+		maxima = player[i]
+print(maxima)
