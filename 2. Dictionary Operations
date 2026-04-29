@@ -1,0 +1,29 @@
+# Initial dictionary with 10 predefined records
+student = {
+    1: "Amit",
+    2: "Riya",
+    3: "Kiran",
+    4: "Neha",
+    5: "Arjun",
+    6: "Pooja",
+    7: "Rahul",
+    8: "Sneha",
+    9: "Vikram",
+    10: "Anjali"
+}
+print("Original Dictionary:",student)
+ins_num=int(input())
+ins_name=input()
+student[ins_num]= ins_name
+print("After Insertion:",student)
+up=int(input())
+key_value= input()
+student[up]= key_value
+print("After Update:",student)
+k= int(input())
+if k in student.keys():
+	student.pop(k)
+print("After Deletion:",student)
+print("Traversing Dictionary:")
+for key, value in student.items():
+	print(f"{key} : {value}")
